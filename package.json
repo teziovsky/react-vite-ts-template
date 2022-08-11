@@ -31,7 +31,12 @@
     "lint:fix": "eslint ./src --ext .jsx,.js,.ts,.tsx --fix --quiet",
     "format": "prettier --check '**/*.{js,jsx,ts,tsx,css,scss,md,json}'",
     "format:fix": "prettier --write '**/*.{js,jsx,ts,tsx,css,scss,md,json}'",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "*.{jsx,js,ts,tsx,scss,json,md}": "prettier --cache --write",
+    "*.{jsx,js,ts,tsx}": "eslint --cache --fix"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -51,6 +56,8 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-simple-import-sort": "^7.0.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.0.0"
