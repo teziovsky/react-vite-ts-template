@@ -1,7 +1,27 @@
 {
   "name": "react-vite-ts-template",
-  "private": true,
   "version": "0.0.0",
+  "description": "A Vite with React and TypeScript starter template. Included eslint, prettier, husky and lint-staged.",
+  "homepage": "https://github.com/teziovsky/react-vite-ts-template/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:teziovsky/react-vite-ts-template.git"
+  },
+  "engines": {
+    "node": ">=v16.0.0",
+    "npm": ">=v8.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/teziovsky/react-vite-ts-template/issues",
+    "email": "teziovsky@gmail.com"
+  },
+  "license": "MIT License",
+  "author": {
+    "name": "Jakub Soboczyński",
+    "email": "teziovsky@gmail.com",
+    "url": "https://www.jakubsoboczynski.pl"
+  },
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
